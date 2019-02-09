@@ -23,7 +23,6 @@ export class InventarioService {
     // return this.http.get(url).pipe(map(r => r.json())).catchError(this.handleError);
     return this.http.get(url).pipe(map(r => r.json()));
   }
-
   // flata el catch por  revisar
   private handleError(error: Response | any) {
     let errMsg: string;
